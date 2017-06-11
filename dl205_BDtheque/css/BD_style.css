@@ -1,0 +1,371 @@
+/* Importation de ma police */
+@font-face {
+    font-family: 'komika_axisregular';
+    src: url('police/KOMIKAX_-webfont.eot');
+    src: url('police/KOMIKAX_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/KOMIKAX_-webfont.woff') format('woff'),
+         url('police/KOMIKAX_-webfont.ttf') format('truetype'),
+         url('police/KOMIKAX_-webfont.svg#komika_axisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Mise en forme générale de la page */
+body
+{
+    font-family: Arial, sans-serif;
+    background-image: url('../img/papier-peint-726-yed.jpg');
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-color: #F1F7F7;
+}
+
+#pos_page
+{
+    width: 99,5%;
+    margin: auto;
+}
+
+#corps_page
+{
+    width: 85%;
+    margin: auto;
+}
+
+a{
+    color: #DD6060;
+}
+
+/* Mise en forme du header */
+header
+{
+    position: relative;
+    margin: 15px;
+    border: 5px #002929 solid;
+    border-radius: 50px 30em;
+    background-color: rgba(92,189,189,0.5);
+    text-align: center;
+    font-family: "komika_axisregular", Arial, sans-serif;
+    font-size: 20px;
+    color: #002929;
+}
+
+header img, header h1
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header img
+{
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    width: 350px;
+    margin: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+header h1
+{
+    margin-left: 5%;
+}
+
+/* Mise en forme des fieldset */
+fieldset
+{
+    width: 69%;
+    margin: auto;
+    margin-top: 80px;
+    padding: 30px;
+    border: 3px #002929 solid;
+    border-radius: 15px;
+    background-color: rgba(92,189,189,0.5);
+    text-align: left;
+}
+
+legend
+{
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #002929;
+    color: white;
+    font-size: 18px;
+    font-family: "komika_axisregular", Arial, sans-serif;
+}
+
+input
+{
+    font-family: Arial, sans-serif;
+    margin: 15px;
+}
+
+/* Mise en forme des boutons d'action */
+.btn_formulaire, .btn_menu_gestion, .btn_ariane
+{
+    width: 150px;
+    background-color: #DD6060;
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.btn_ariane
+{
+    width: 100px;
+}
+
+/* Mise en forme du menu */
+#menu
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 60px;
+    width: 18%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.bouton_menu
+{
+    width: 99%;
+    margin-top: 60px;
+    background-color: #DD6060;
+    border-radius: 30px;
+    font-family: "komika_axisregular", Arial, sans-serif;
+    font-size: 16px;
+}
+
+#menu_recherche, #menu_gestion
+{
+    display: none;
+}
+
+#menu input, #menu select, .btn_menu_gestion
+{
+    width: 80%;
+    min-width: 150px;
+}
+
+/* Mise en forme de la page d'accueil */
+#consult_libre, #connexion
+{
+    text-align: center;
+}
+
+#valid_list_BD
+{
+    border-radius: 30px;
+    background-color: #DD6060;
+    padding: 10px;
+    font-size: 24px;
+}
+
+/* Mise en forme des infos des BDs dans la liste */
+#list_BD, #list_BD img, #list_BD div, #list_BD a
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#list_BD
+{
+    text-align: center;
+}
+
+#list_BD article
+{
+    width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+    background-color: #F1F7F7;
+    padding: 20px;
+    text-align: left;
+}
+
+#label_info_list
+{
+    width: 15%;
+}
+
+#info_BD_list
+{
+    width: 45%;
+}
+
+#list_BD img
+{
+    width: 100px;
+    height: 140px;
+    margin-right: 50px;
+}
+
+#list_BD div
+{
+    vertical-align: top;
+}
+
+/* Mise en forme de la page de consultation */
+#pos_consult
+{
+    display: inline-block;
+    width: 75%;
+}
+#BD, #Comment
+{
+    width: 100%;
+}
+
+/* Partie informations BD */
+#couv_BD, #info_BD_consult, #intitule_info_BD, #inclusion_info_BD
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#titre_BD
+{
+    font-size: 22px;
+}
+
+#couv_BD
+{
+    width: 250px;
+    height: 350px;
+    margin-right: 50px;
+}
+
+#intitule_info_BD
+{
+    width: 100px;
+    font-weight: bold;
+}
+
+.themes_consult
+{
+    height: 75px;
+}
+
+/* Partie commentaires */
+#com_affiche, #saisie_com
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+
+.com
+{ 
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.com h1
+{
+    display: inline-block;
+}
+
+.date
+{
+    position: absolute;
+    right: 0px;
+    text-align: right;
+}
+
+.com p
+{
+    width: 97%;
+    height: 50px;
+    background-color: azure;
+    margin: 0px;
+    padding: 5px;
+}
+
+#saisie_com
+{
+    margin-left: 30px;
+    height: 100%;
+    font-size: 14px;
+}
+
+#com_pseudo_saisie label, #com_texte_saisie label
+{
+    display: inline-block;
+    width: 125px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#com_texte_saisie label
+{
+    vertical-align: top;
+}
+
+#com_pseudo_saisie input
+{
+    width: 85%;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#com_texte_saisie textarea
+{
+    width: 85%;
+    height: 300px;
+    margin-left: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#com_valid_saisie
+{
+    text-align: center;
+}
+
+/* Mise en forme de l'accueil admin et des pages de gestion */
+#pos_accueil_admin, .pos_gestion
+{
+    display: inline-block;
+    width: 75%;
+}
+
+/* Page de gestion des commentaires */
+.com_gestion
+{
+    position: relative;
+    border: 1px #002929 solid;
+    padding: 10px;
+    width: 95%;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.com_gestion h2
+{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.date_gestion_com
+{
+    position: absolute;
+    right: 10px;
+}
+
+.com_gestion textarea
+{
+    width: 99%;
+}
+
+/* Page de gestion des BD */
+#ajout_BD, #modif_BD
+{
+    display: none;
+}
